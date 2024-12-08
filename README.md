@@ -4,10 +4,10 @@ une petite application qui permet de gérer les produits d’un catalogue et d�
 # Configuration de l'environnement :
 1. Prérequis
 Avant de commencer, assurez-vous d'avoir installé les outils suivants sur votre machine :
-Python (pour le backend avec Django)
-Node.js (pour le frontend avec Vue.js)
-pip (pour installer les packages Python)
-npm (pour installer les packages Node.js)
+* Python (pour le backend avec Django)
+* Node.js (pour le frontend avec Vue.js)
+* pip (pour installer les packages Python)
+* npm (pour installer les packages Node.js)
 # 2. Configuration du backend
 a. Cloner le repository
 Dans votre terminal, clonez le repository du projet :
