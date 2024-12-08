@@ -20,17 +20,17 @@ Dans votre terminal, clonez le repository du projet :
 
 "Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass"
 
-Ensuite, activez l'environnement virtuel avec la commande suivante :
+* Ensuite, activez l'environnement virtuel avec la commande suivante :
 
 ".\env\Scripts\Activate"
 
-Sur macOS/Linux :
+* Sur macOS/Linux :
 
-source env/bin/activate
+"source env/bin/activate"
 
-Ensuite, installez les dépendances via pip :
+* Ensuite, installez les dépendances via pip :
 
-pip install -r requirements.txt
+"pip install -r requirements.txt"
 
 d. Configurer les variables d'environnement
 e. Lancer le backend
