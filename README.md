@@ -55,7 +55,7 @@ c. Lancer le frontend
 * Pour démarrer le serveur de développement Vue.js, utilisez la commande suivante :
 
 "npm run serve"
-Cela lancera le frontend sur http://localhost:8080/.
++ Cela lancera le frontend sur http://localhost:8080/.
 
 # Tests
 * Pour exécuter les tests unitaires du backend, utilisez la commande suivante :
