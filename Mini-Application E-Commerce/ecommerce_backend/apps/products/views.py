@@ -5,17 +5,23 @@ from rest_framework import status
 from .models import Product
 from .serializers import ProductSerializer
 
-# GET /products/ - List all products
+# GET /products/ - List all products or filter by availability
 class ProductListView(APIView):
     def get(self, request):
+        # Check if the 'in_stock' query parameter is provided
         in_stock = request.query_params.get('in_stock', None)
+
+        # Filter products based on stock availability if the 'in_stock' query parameter is provided
         if in_stock is not None:
-            # Filter by stock availability
-            in_stock = in_stock.lower() == 'true'
-            products = Product.objects.filter(stock__gt=0 if in_stock else 0)
+            in_stock = in_stock.lower() == 'true' 
+            if in_stock:
+                products = Product.objects.filter(stock__gt=0)
+            else:
+                products = Product.objects.filter(stock__lte=0)
         else:
-            # Return all products
+            # If no filter, return all products
             products = Product.objects.all()
+
         serializer = ProductSerializer(products, many=True)
         return Response(serializer.data)
 
@@ -36,7 +42,7 @@ class ProductUpdateView(APIView):
         except Product.DoesNotExist:
             return Response({"detail": "Produit non trouvé."}, status=status.HTTP_404_NOT_FOUND)
 
-        serializer = ProductSerializer(product, data=request.data)
+        serializer = ProductSerializer(product, data=request.data, partial=True)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data)
