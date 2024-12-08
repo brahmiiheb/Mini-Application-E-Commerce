@@ -14,11 +14,11 @@ Dans votre terminal, clonez le repository du projet :
 
 [git clone https://github.com/brahmiiheb/Mini-Application-E-Commerce.git]
 + cd Mini-Application-E-Commerce
-b. Créer un environnement virtuel
-Créez un environnement virtuel pour isoler les dépendances :
-python -m venv venv
-c. Activer l'environnement virtuel
-Sur Windows : Avant d'activer l'environnement virtuel, vous devrez peut-être exécuter cette commande pour permettre les scripts PowerShell :
++ b. Créer un environnement virtuel:
++ Créez un environnement virtuel pour isoler les dépendances :
++ python -m venv venv
+  c. Activer l'environnement virtuel :
+  Sur Windows : Avant d'activer l'environnement virtuel, vous devrez peut-être exécuter cette commande pour permettre les scripts PowerShell :
 
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
