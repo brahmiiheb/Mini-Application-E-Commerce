@@ -34,10 +34,11 @@ Dans votre terminal, clonez le repository du projet :
 
 d. Configurer les variables d'environnement
 e. Lancer le backend
-Pour démarrer le serveur de développement Django, utilisez la commande suivante :
+* Pour démarrer le serveur de développement Django, utilisez la commande suivante :
 
-python manage.py runserver
-Cela lancera le backend sur http://127.0.0.1:8000/.
+"python manage.py runserver"
+
++ Cela lancera le backend sur http://127.0.0.1:8000/.
 
 # 3. Configuration du frontend
 a. Se rendre dans le répertoire frontend
